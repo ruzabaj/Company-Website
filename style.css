@@ -1,0 +1,83 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.test {
+    width: 100%;
+    height: 100vh;
+    background: url("./office.jpg");
+    /* background-repeat: no-repeat; */
+    background-position: center; 
+    position: relative;
+    overflow: hidden;
+    background-size: cover; 
+}
+.navbar {
+    width: 95%;
+    height: 7%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    background:transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    outline: none;
+    cursor: crosshair;
+}
+button:hover{
+    background: #1e7b7b;
+}
+.dropdown{
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.dropdown ul{
+    display: inline-flex;
+    list-style: none;
+    color: teal;
+}
+.dropdown ul li{
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+.dropdown ul li a{
+    text-decoration: none;
+    color: teal;
+}
+.act, .dropdown ul li:hover{
+    background:  	 #99e6e6;
+    border-radius: 5px;
+}
+.sub-m1{
+    display: none;
+}
+.dropdown ul li:hover .sub-m1{
+    display: block;
+    background:white;
+    position: absolute;
+    margin-top: 10px;
+    margin-left : 9px;;
+}
+.dropdown ul li:hover .sub-m1 ul{
+    display:block;
+}
+
+.dropdown ul li:hover .sub-m1 ul li{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted line black;
+    border-radius: 0px;
+    text-align: center;
+
+}
